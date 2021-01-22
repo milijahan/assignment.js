@@ -4,10 +4,24 @@ function kilometerToMeter(kilometer){
     var meter = kilometer/1000;
     return meter;
 }
-// var padmaBridge = kilometerToMeter(6150);
-// console.log(padmaBridge);
+
+
+
+
+
 
 // 2.budgetCalculator
+
+function budgetCalculator(watch, mobile, laptop) {
+    var watchbudget = watch * 50;     
+    var mobilebudget = mobile * 100;    
+    var laptopbudget = laptop * 500;  
+    var total = watchbudget + mobilebudget + laptopbudget;
+    return total;
+}
+
+
+
 
 
 
@@ -36,27 +50,30 @@ function hotelCost(day){
             totalCost = first10Day + second10Day + NextDay;
         }
 
-        
+
         return totalCost;
     }
     
-result = hotelCost(40);
-console.log(result);
+
+
+
+
 
 
 // 4. megaFriend
 
 function megaFriend(name){
-    var long = name[0];
-     for (var i = 0; i < name.length; i++) {
-        const element = name[i];
-            if( long.length < element.length){
-                long = element
-                }
-                     }
-                    return long
-                        }
 
-        var  friend = ["tamanna","shaila","taniya","nilima","karina"]
-        var longname = megaFriend(friend)
-        console.log(longname)
+    var long = name[0];
+    
+    for (var i = 0; i < name.length; i++) {
+        var element = name[i];
+
+      if( long.length < element.length){
+         long = element
+      }
+      }
+      return long
+      }
+
+        
